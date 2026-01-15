@@ -1,0 +1,24 @@
+{
+  "name": "go-instagram",
+  "version": "1.1.0",
+  "description": "인스타그램 로그인 자동화 스크립트",
+  "main": "instagram_login.js",
+  "scripts": {
+    "start": "node instagram_login.js"
+  },
+  "keywords": [
+    "instagram",
+    "automation",
+    "chrome",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnam91/go-instagram.git"
+  }
+}

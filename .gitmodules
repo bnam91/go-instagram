@@ -1,3 +1,9 @@
 [submodule "submodules/templates_mkdir"]
 	path = submodules/templates_mkdir
 	url = https://github.com/bnam91/templates_mkdir.git
+[submodule "submodules/module_chrome_set"]
+	path = submodules/module_chrome_set
+	url = https://github.com/bnam91/module_chrome_set
+[submodule "submodules/module_update_auto"]
+	path = submodules/module_update_auto
+	url = https://github.com/bnam91/module_update_auto.git
