@@ -5,7 +5,16 @@
  * 인스타그램으로 이동합니다.
  */
 
-const path = require('path');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { createRequire } from 'module';
+
+// ESM에서 __dirname과 __filename 사용을 위한 설정
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// CommonJS 모듈을 import하기 위한 require 생성
+const require = createRequire(import.meta.url);
 const { openBrowser } = require('./submodules/module_chrome_set');
 
 async function main() {
@@ -52,8 +61,8 @@ async function main() {
 }
 
 // 스크립트 실행
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-module.exports = { main };
+export { main };

@@ -1,6 +1,6 @@
 {
   "name": "go-instagram",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "인스타그램 로그인 자동화 스크립트",
   "type": "module",
   "main": "main.js",

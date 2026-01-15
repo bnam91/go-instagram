@@ -60,7 +60,7 @@ async function checkAndUpdate() {
  */
 async function runInstagramLogin() {
   try {
-    // CommonJS 모듈을 동적으로 import
+    // ESM 모듈 import
     const instagramLogin = await import('./instagram_login.js');
     
     // main 함수 실행
